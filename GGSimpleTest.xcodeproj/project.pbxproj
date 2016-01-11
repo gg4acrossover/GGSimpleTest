@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD1FDB421B984BBF00258F9D /* GGBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1FDB411B984BBF00258F9D /* GGBasicAnimation.m */; };
+		DD2030041B905E8B002DAABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2030031B905E8B002DAABD /* main.m */; };
+		DD2030071B905E8B002DAABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2030061B905E8B002DAABD /* AppDelegate.m */; };
+		DD20300F1B905E8B002DAABD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD20300E1B905E8B002DAABD /* Images.xcassets */; };
+		DD2030121B905E8B002DAABD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2030101B905E8B002DAABD /* LaunchScreen.xib */; };
+		DD20301E1B905E8B002DAABD /* GGSimpleTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD20301D1B905E8B002DAABD /* GGSimpleTestTests.m */; };
+		DD34C5341BA6A3E6003C5EB8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD34C5331BA6A3E6003C5EB8 /* QuartzCore.framework */; };
+		DD34C5371BA6C07B003C5EB8 /* GGCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD34C5361BA6C07B003C5EB8 /* GGCircleView.m */; };
+		DD429A241C2A5BE700A9D867 /* GGHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD429A231C2A5BE700A9D867 /* GGHeaderViewController.m */; };
+		DD62E4071B9D47BC00188C16 /* GGLeftMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD62E4091B9D47BC00188C16 /* GGLeftMenu.xib */; };
+		DD6E04B91B945CFF00DFADD7 /* menuLeft.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD6E04B81B945CFF00DFADD7 /* menuLeft.plist */; };
+		DD6E04C81B9474B900DFADD7 /* GGAnimView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6E04C61B9474B900DFADD7 /* GGAnimView.m */; };
+		DD6E04C91B9474B900DFADD7 /* GGAnimView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD6E04C71B9474B900DFADD7 /* GGAnimView.xib */; };
+		DD6E04CE1B9474C200DFADD7 /* GGMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6E04CC1B9474C200DFADD7 /* GGMenuView.m */; };
+		DD6E04CF1B9474C200DFADD7 /* GGMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD6E04CD1B9474C200DFADD7 /* GGMenuView.xib */; };
+		DD6E04D41B9474CE00DFADD7 /* GGDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6E04D21B9474CE00DFADD7 /* GGDrawView.m */; };
+		DD6E04D51B9474CE00DFADD7 /* GGDrawView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD6E04D31B9474CE00DFADD7 /* GGDrawView.xib */; };
+		DD6E04DA1B9474DA00DFADD7 /* GGLeftMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6E04D81B9474DA00DFADD7 /* GGLeftMenu.m */; };
+		DD6E04DF1B94754200DFADD7 /* GGParseLeftMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6E04DE1B94754200DFADD7 /* GGParseLeftMenu.m */; };
+		DD70B8781B95B09F000089FA /* GGAnimStransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DD70B8771B95B09F000089FA /* GGAnimStransition.m */; };
+		DD75F15E1C2A87A600ECFB84 /* UIScrollView+GGHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD75F15D1C2A87A600ECFB84 /* UIScrollView+GGHeaderView.m */; };
+		DD8478321BBA38A300653B48 /* GGSpinerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8478311BBA38A300653B48 /* GGSpinerLayer.m */; };
+		DD8478351BBA472400653B48 /* GGBtnAnim.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8478341BBA472400653B48 /* GGBtnAnim.m */; };
+		DDDF11861C2BCD7000F993D1 /* GGAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDF11841C2BCD7000F993D1 /* GGAutoLayoutViewController.m */; };
+		DDDF11871C2BCD7000F993D1 /* GGAutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDF11851C2BCD7000F993D1 /* GGAutoLayoutViewController.xib */; };
+		DDF9FE8B1C3F70CD002804A1 /* ParallaxImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDF9FE8A1C3F70CD002804A1 /* ParallaxImage.jpg */; };
+		FB50768791B729B5EBBC1F71 /* libPods-GGSimpleTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E1A7DA8ED7CC01DCE4CCAB /* libPods-GGSimpleTest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD2030181B905E8B002DAABD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD202FF61B905E8B002DAABD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD202FFD1B905E8B002DAABD;
+			remoteInfo = GGSimpleTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A327404CA0FC3F1CA08BC1 /* Pods-GGSimpleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSimpleTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGSimpleTest/Pods-GGSimpleTest.release.xcconfig"; sourceTree = "<group>"; };
+		22E1A7DA8ED7CC01DCE4CCAB /* libPods-GGSimpleTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GGSimpleTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06C08F7C4B4177A68459B69 /* Pods-GGSimpleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSimpleTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGSimpleTest/Pods-GGSimpleTest.debug.xcconfig"; sourceTree = "<group>"; };
+		DD1FDB401B984BBF00258F9D /* GGBasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBasicAnimation.h; sourceTree = "<group>"; };
+		DD1FDB411B984BBF00258F9D /* GGBasicAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBasicAnimation.m; sourceTree = "<group>"; };
+		DD202FFE1B905E8B002DAABD /* GGSimpleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGSimpleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2030021B905E8B002DAABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2030031B905E8B002DAABD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD2030051B905E8B002DAABD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD2030061B905E8B002DAABD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD20300E1B905E8B002DAABD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DD2030111B905E8B002DAABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DD2030171B905E8B002DAABD /* GGSimpleTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GGSimpleTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD20301C1B905E8B002DAABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD20301D1B905E8B002DAABD /* GGSimpleTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGSimpleTestTests.m; sourceTree = "<group>"; };
+		DD34C5331BA6A3E6003C5EB8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DD34C5351BA6C07B003C5EB8 /* GGCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCircleView.h; sourceTree = "<group>"; };
+		DD34C5361BA6C07B003C5EB8 /* GGCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCircleView.m; sourceTree = "<group>"; };
+		DD429A221C2A5BE700A9D867 /* GGHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGHeaderViewController.h; sourceTree = "<group>"; };
+		DD429A231C2A5BE700A9D867 /* GGHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGHeaderViewController.m; sourceTree = "<group>"; };
+		DD62E4081B9D47BC00188C16 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GGLeftMenu.xib; sourceTree = "<group>"; };
+		DD6E04B81B945CFF00DFADD7 /* menuLeft.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = menuLeft.plist; sourceTree = "<group>"; };
+		DD6E04C51B9474B900DFADD7 /* GGAnimView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGAnimView.h; sourceTree = "<group>"; };
+		DD6E04C61B9474B900DFADD7 /* GGAnimView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGAnimView.m; sourceTree = "<group>"; };
+		DD6E04C71B9474B900DFADD7 /* GGAnimView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGAnimView.xib; sourceTree = "<group>"; };
+		DD6E04CB1B9474C200DFADD7 /* GGMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGMenuView.h; sourceTree = "<group>"; };
+		DD6E04CC1B9474C200DFADD7 /* GGMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGMenuView.m; sourceTree = "<group>"; };
+		DD6E04CD1B9474C200DFADD7 /* GGMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGMenuView.xib; sourceTree = "<group>"; };
+		DD6E04D11B9474CE00DFADD7 /* GGDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGDrawView.h; sourceTree = "<group>"; };
+		DD6E04D21B9474CE00DFADD7 /* GGDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGDrawView.m; sourceTree = "<group>"; };
+		DD6E04D31B9474CE00DFADD7 /* GGDrawView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGDrawView.xib; sourceTree = "<group>"; };
+		DD6E04D71B9474DA00DFADD7 /* GGLeftMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGLeftMenu.h; sourceTree = "<group>"; };
+		DD6E04D81B9474DA00DFADD7 /* GGLeftMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGLeftMenu.m; sourceTree = "<group>"; };
+		DD6E04DD1B94754200DFADD7 /* GGParseLeftMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGParseLeftMenu.h; sourceTree = "<group>"; };
+		DD6E04DE1B94754200DFADD7 /* GGParseLeftMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGParseLeftMenu.m; sourceTree = "<group>"; };
+		DD70B8761B95B09F000089FA /* GGAnimStransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGAnimStransition.h; sourceTree = "<group>"; };
+		DD70B8771B95B09F000089FA /* GGAnimStransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGAnimStransition.m; sourceTree = "<group>"; };
+		DD75F15C1C2A87A600ECFB84 /* UIScrollView+GGHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+GGHeaderView.h"; sourceTree = "<group>"; };
+		DD75F15D1C2A87A600ECFB84 /* UIScrollView+GGHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+GGHeaderView.m"; sourceTree = "<group>"; };
+		DD8478301BBA38A300653B48 /* GGSpinerLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGSpinerLayer.h; sourceTree = "<group>"; };
+		DD8478311BBA38A300653B48 /* GGSpinerLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGSpinerLayer.m; sourceTree = "<group>"; };
+		DD8478331BBA472400653B48 /* GGBtnAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBtnAnim.h; sourceTree = "<group>"; };
+		DD8478341BBA472400653B48 /* GGBtnAnim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBtnAnim.m; sourceTree = "<group>"; };
+		DDDF11831C2BCD7000F993D1 /* GGAutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGAutoLayoutViewController.h; sourceTree = "<group>"; };
+		DDDF11841C2BCD7000F993D1 /* GGAutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGAutoLayoutViewController.m; sourceTree = "<group>"; };
+		DDDF11851C2BCD7000F993D1 /* GGAutoLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGAutoLayoutViewController.xib; sourceTree = "<group>"; };
+		DDF9FE8A1C3F70CD002804A1 /* ParallaxImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ParallaxImage.jpg; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD202FFB1B905E8B002DAABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD34C5341BA6A3E6003C5EB8 /* QuartzCore.framework in Frameworks */,
+				FB50768791B729B5EBBC1F71 /* libPods-GGSimpleTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2030141B905E8B002DAABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89C03FC05036BE1F08E311D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B06C08F7C4B4177A68459B69 /* Pods-GGSimpleTest.debug.xcconfig */,
+				00A327404CA0FC3F1CA08BC1 /* Pods-GGSimpleTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD202FF51B905E8B002DAABD = {
+			isa = PBXGroup;
+			children = (
+				DD2030001B905E8B002DAABD /* GGSimpleTest */,
+				DD20301A1B905E8B002DAABD /* GGSimpleTestTests */,
+				DD202FFF1B905E8B002DAABD /* Products */,
+				89C03FC05036BE1F08E311D8 /* Pods */,
+				EB0EEE9B14C9F0E94C8B5CD5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD202FFF1B905E8B002DAABD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD202FFE1B905E8B002DAABD /* GGSimpleTest.app */,
+				DD2030171B905E8B002DAABD /* GGSimpleTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD2030001B905E8B002DAABD /* GGSimpleTest */ = {
+			isa = PBXGroup;
+			children = (
+				DDDF11821C2BCD1600F993D1 /* GGAutoLayout */,
+				DD429A211C2A5BB100A9D867 /* GGHeaderView */,
+				DD6E04DC1B94751D00DFADD7 /* Model */,
+				DD6E04D61B9474DA00DFADD7 /* GGMenuLeft */,
+				DD6E04D01B9474CE00DFADD7 /* GGDrawView */,
+				DD6E04CA1B9474C200DFADD7 /* GGButtonMenu */,
+				DD6E04C41B9474B900DFADD7 /* GGAnimview */,
+				DD6E04B71B945CE200DFADD7 /* MenuXml */,
+				DD2030051B905E8B002DAABD /* AppDelegate.h */,
+				DD2030061B905E8B002DAABD /* AppDelegate.m */,
+				DD20300E1B905E8B002DAABD /* Images.xcassets */,
+				DD2030101B905E8B002DAABD /* LaunchScreen.xib */,
+				DD2030011B905E8B002DAABD /* Supporting Files */,
+			);
+			path = GGSimpleTest;
+			sourceTree = "<group>";
+		};
+		DD2030011B905E8B002DAABD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDF9FE8A1C3F70CD002804A1 /* ParallaxImage.jpg */,
+				DD2030021B905E8B002DAABD /* Info.plist */,
+				DD2030031B905E8B002DAABD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD20301A1B905E8B002DAABD /* GGSimpleTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD20301D1B905E8B002DAABD /* GGSimpleTestTests.m */,
+				DD20301B1B905E8B002DAABD /* Supporting Files */,
+			);
+			path = GGSimpleTestTests;
+			sourceTree = "<group>";
+		};
+		DD20301B1B905E8B002DAABD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD20301C1B905E8B002DAABD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD429A211C2A5BB100A9D867 /* GGHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				DD429A221C2A5BE700A9D867 /* GGHeaderViewController.h */,
+				DD429A231C2A5BE700A9D867 /* GGHeaderViewController.m */,
+				DD75F15C1C2A87A600ECFB84 /* UIScrollView+GGHeaderView.h */,
+				DD75F15D1C2A87A600ECFB84 /* UIScrollView+GGHeaderView.m */,
+			);
+			path = GGHeaderView;
+			sourceTree = "<group>";
+		};
+		DD6E04B71B945CE200DFADD7 /* MenuXml */ = {
+			isa = PBXGroup;
+			children = (
+				DD6E04B81B945CFF00DFADD7 /* menuLeft.plist */,
+			);
+			path = MenuXml;
+			sourceTree = "<group>";
+		};
+		DD6E04C41B9474B900DFADD7 /* GGAnimview */ = {
+			isa = PBXGroup;
+			children = (
+				DD6E04C51B9474B900DFADD7 /* GGAnimView.h */,
+				DD6E04C61B9474B900DFADD7 /* GGAnimView.m */,
+				DD6E04C71B9474B900DFADD7 /* GGAnimView.xib */,
+				DD70B8761B95B09F000089FA /* GGAnimStransition.h */,
+				DD70B8771B95B09F000089FA /* GGAnimStransition.m */,
+				DD1FDB401B984BBF00258F9D /* GGBasicAnimation.h */,
+				DD1FDB411B984BBF00258F9D /* GGBasicAnimation.m */,
+			);
+			path = GGAnimview;
+			sourceTree = "<group>";
+		};
+		DD6E04CA1B9474C200DFADD7 /* GGButtonMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DD6E04CB1B9474C200DFADD7 /* GGMenuView.h */,
+				DD6E04CC1B9474C200DFADD7 /* GGMenuView.m */,
+				DD6E04CD1B9474C200DFADD7 /* GGMenuView.xib */,
+				DD8478301BBA38A300653B48 /* GGSpinerLayer.h */,
+				DD8478311BBA38A300653B48 /* GGSpinerLayer.m */,
+				DD8478331BBA472400653B48 /* GGBtnAnim.h */,
+				DD8478341BBA472400653B48 /* GGBtnAnim.m */,
+			);
+			path = GGButtonMenu;
+			sourceTree = "<group>";
+		};
+		DD6E04D01B9474CE00DFADD7 /* GGDrawView */ = {
+			isa = PBXGroup;
+			children = (
+				DD6E04D11B9474CE00DFADD7 /* GGDrawView.h */,
+				DD6E04D21B9474CE00DFADD7 /* GGDrawView.m */,
+				DD6E04D31B9474CE00DFADD7 /* GGDrawView.xib */,
+				DD34C5351BA6C07B003C5EB8 /* GGCircleView.h */,
+				DD34C5361BA6C07B003C5EB8 /* GGCircleView.m */,
+			);
+			path = GGDrawView;
+			sourceTree = "<group>";
+		};
+		DD6E04D61B9474DA00DFADD7 /* GGMenuLeft */ = {
+			isa = PBXGroup;
+			children = (
+				DD6E04D71B9474DA00DFADD7 /* GGLeftMenu.h */,
+				DD6E04D81B9474DA00DFADD7 /* GGLeftMenu.m */,
+				DD62E4091B9D47BC00188C16 /* GGLeftMenu.xib */,
+			);
+			path = GGMenuLeft;
+			sourceTree = "<group>";
+		};
+		DD6E04DC1B94751D00DFADD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD6E04DD1B94754200DFADD7 /* GGParseLeftMenu.h */,
+				DD6E04DE1B94754200DFADD7 /* GGParseLeftMenu.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDDF11821C2BCD1600F993D1 /* GGAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DDDF11831C2BCD7000F993D1 /* GGAutoLayoutViewController.h */,
+				DDDF11841C2BCD7000F993D1 /* GGAutoLayoutViewController.m */,
+				DDDF11851C2BCD7000F993D1 /* GGAutoLayoutViewController.xib */,
+			);
+			path = GGAutoLayout;
+			sourceTree = "<group>";
+		};
+		EB0EEE9B14C9F0E94C8B5CD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD34C5331BA6A3E6003C5EB8 /* QuartzCore.framework */,
+				22E1A7DA8ED7CC01DCE4CCAB /* libPods-GGSimpleTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD202FFD1B905E8B002DAABD /* GGSimpleTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2030211B905E8B002DAABD /* Build configuration list for PBXNativeTarget "GGSimpleTest" */;
+			buildPhases = (
+				801A83DCCC0BC0FB9DE5EE9B /* Check Pods Manifest.lock */,
+				DD202FFA1B905E8B002DAABD /* Sources */,
+				DD202FFB1B905E8B002DAABD /* Frameworks */,
+				DD202FFC1B905E8B002DAABD /* Resources */,
+				09CDDC9B0C625945317FD137 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GGSimpleTest;
+			productName = GGSimpleTest;
+			productReference = DD202FFE1B905E8B002DAABD /* GGSimpleTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD2030161B905E8B002DAABD /* GGSimpleTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2030241B905E8B002DAABD /* Build configuration list for PBXNativeTarget "GGSimpleTestTests" */;
+			buildPhases = (
+				DD2030131B905E8B002DAABD /* Sources */,
+				DD2030141B905E8B002DAABD /* Frameworks */,
+				DD2030151B905E8B002DAABD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD2030191B905E8B002DAABD /* PBXTargetDependency */,
+			);
+			name = GGSimpleTestTests;
+			productName = GGSimpleTestTests;
+			productReference = DD2030171B905E8B002DAABD /* GGSimpleTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD202FF61B905E8B002DAABD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = viethq;
+				TargetAttributes = {
+					DD202FFD1B905E8B002DAABD = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					DD2030161B905E8B002DAABD = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = DD202FFD1B905E8B002DAABD;
+					};
+				};
+			};
+			buildConfigurationList = DD202FF91B905E8B002DAABD /* Build configuration list for PBXProject "GGSimpleTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD202FF51B905E8B002DAABD;
+			productRefGroup = DD202FFF1B905E8B002DAABD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD202FFD1B905E8B002DAABD /* GGSimpleTest */,
+				DD2030161B905E8B002DAABD /* GGSimpleTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD202FFC1B905E8B002DAABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2030121B905E8B002DAABD /* LaunchScreen.xib in Resources */,
+				DD6E04C91B9474B900DFADD7 /* GGAnimView.xib in Resources */,
+				DD20300F1B905E8B002DAABD /* Images.xcassets in Resources */,
+				DDDF11871C2BCD7000F993D1 /* GGAutoLayoutViewController.xib in Resources */,
+				DD62E4071B9D47BC00188C16 /* GGLeftMenu.xib in Resources */,
+				DD6E04CF1B9474C200DFADD7 /* GGMenuView.xib in Resources */,
+				DD6E04D51B9474CE00DFADD7 /* GGDrawView.xib in Resources */,
+				DD6E04B91B945CFF00DFADD7 /* menuLeft.plist in Resources */,
+				DDF9FE8B1C3F70CD002804A1 /* ParallaxImage.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2030151B905E8B002DAABD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09CDDC9B0C625945317FD137 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GGSimpleTest/Pods-GGSimpleTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		801A83DCCC0BC0FB9DE5EE9B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD202FFA1B905E8B002DAABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2030071B905E8B002DAABD /* AppDelegate.m in Sources */,
+				DD6E04D41B9474CE00DFADD7 /* GGDrawView.m in Sources */,
+				DD8478321BBA38A300653B48 /* GGSpinerLayer.m in Sources */,
+				DD6E04CE1B9474C200DFADD7 /* GGMenuView.m in Sources */,
+				DD429A241C2A5BE700A9D867 /* GGHeaderViewController.m in Sources */,
+				DD6E04DA1B9474DA00DFADD7 /* GGLeftMenu.m in Sources */,
+				DD6E04DF1B94754200DFADD7 /* GGParseLeftMenu.m in Sources */,
+				DD2030041B905E8B002DAABD /* main.m in Sources */,
+				DD34C5371BA6C07B003C5EB8 /* GGCircleView.m in Sources */,
+				DD75F15E1C2A87A600ECFB84 /* UIScrollView+GGHeaderView.m in Sources */,
+				DD6E04C81B9474B900DFADD7 /* GGAnimView.m in Sources */,
+				DDDF11861C2BCD7000F993D1 /* GGAutoLayoutViewController.m in Sources */,
+				DD8478351BBA472400653B48 /* GGBtnAnim.m in Sources */,
+				DD1FDB421B984BBF00258F9D /* GGBasicAnimation.m in Sources */,
+				DD70B8781B95B09F000089FA /* GGAnimStransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2030131B905E8B002DAABD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD20301E1B905E8B002DAABD /* GGSimpleTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD2030191B905E8B002DAABD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD202FFD1B905E8B002DAABD /* GGSimpleTest */;
+			targetProxy = DD2030181B905E8B002DAABD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD2030101B905E8B002DAABD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD2030111B905E8B002DAABD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		DD62E4091B9D47BC00188C16 /* GGLeftMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD62E4081B9D47BC00188C16 /* en */,
+			);
+			name = GGLeftMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD20301F1B905E8B002DAABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD2030201B905E8B002DAABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD2030221B905E8B002DAABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B06C08F7C4B4177A68459B69 /* Pods-GGSimpleTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GGSimpleTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD2030231B905E8B002DAABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A327404CA0FC3F1CA08BC1 /* Pods-GGSimpleTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GGSimpleTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DD2030251B905E8B002DAABD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GGSimpleTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GGSimpleTest.app/GGSimpleTest";
+			};
+			name = Debug;
+		};
+		DD2030261B905E8B002DAABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GGSimpleTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GGSimpleTest.app/GGSimpleTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD202FF91B905E8B002DAABD /* Build configuration list for PBXProject "GGSimpleTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD20301F1B905E8B002DAABD /* Debug */,
+				DD2030201B905E8B002DAABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD2030211B905E8B002DAABD /* Build configuration list for PBXNativeTarget "GGSimpleTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2030221B905E8B002DAABD /* Debug */,
+				DD2030231B905E8B002DAABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD2030241B905E8B002DAABD /* Build configuration list for PBXNativeTarget "GGSimpleTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2030251B905E8B002DAABD /* Debug */,
+				DD2030261B905E8B002DAABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD202FF61B905E8B002DAABD /* Project object */;
+}

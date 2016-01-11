@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9060"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GGAutoLayoutViewController">
+            <connections>
+                <outlet property="mBlueView" destination="WFu-Cn-wJW" id="RIp-sW-0ci"/>
+                <outlet property="mRedView" destination="jP3-0E-cDF" id="qQP-DH-EKP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFu-Cn-wJW">
+                    <rect key="frame" x="8" y="427" width="304" height="54"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jP3-0E-cDF">
+                    <rect key="frame" x="8" y="494" width="304" height="54"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.1916743719198345" blue="0.1473247045936642" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="bW5-KS-fV8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Fa-Pj-925">
+                    <rect key="frame" x="8" y="358" width="304" height="54"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.1916743719" blue="0.14732470459999999" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="euE-y5-4Tq">
+                    <rect key="frame" x="8" y="286" width="304" height="54"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0Fa-Pj-925" secondAttribute="trailing" constant="8" id="23d-nd-HZQ"/>
+                <constraint firstItem="0Fa-Pj-925" firstAttribute="height" secondItem="jP3-0E-cDF" secondAttribute="height" id="9YI-0X-20E"/>
+                <constraint firstItem="jP3-0E-cDF" firstAttribute="top" secondItem="WFu-Cn-wJW" secondAttribute="bottom" constant="13" id="BcF-Aw-wu9"/>
+                <constraint firstItem="jP3-0E-cDF" firstAttribute="height" secondItem="WFu-Cn-wJW" secondAttribute="height" id="C53-ej-8np"/>
+                <constraint firstItem="jP3-0E-cDF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Cxz-wc-Aid"/>
+                <constraint firstItem="euE-y5-4Tq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Ija-iS-PPf"/>
+                <constraint firstAttribute="trailing" secondItem="jP3-0E-cDF" secondAttribute="trailing" constant="8" id="MNV-xq-ZKs"/>
+                <constraint firstItem="0Fa-Pj-925" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="TN5-Xc-m1X"/>
+                <constraint firstItem="WFu-Cn-wJW" firstAttribute="top" secondItem="0Fa-Pj-925" secondAttribute="bottom" constant="15" id="aSK-uW-2ZI"/>
+                <constraint firstItem="0Fa-Pj-925" firstAttribute="top" secondItem="euE-y5-4Tq" secondAttribute="bottom" constant="18" id="dD6-QS-jrD"/>
+                <constraint firstItem="WFu-Cn-wJW" firstAttribute="trailing" secondItem="jP3-0E-cDF" secondAttribute="trailing" id="gF5-lt-AF7"/>
+                <constraint firstItem="euE-y5-4Tq" firstAttribute="height" secondItem="jP3-0E-cDF" secondAttribute="height" id="nac-u4-qwV"/>
+                <constraint firstItem="WFu-Cn-wJW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="pjf-hb-nJX"/>
+                <constraint firstAttribute="trailing" secondItem="euE-y5-4Tq" secondAttribute="trailing" constant="8" id="rqL-QC-haq"/>
+                <constraint firstAttribute="trailing" secondItem="WFu-Cn-wJW" secondAttribute="trailing" constant="8" id="zNB-ql-KA3"/>
+                <constraint firstAttribute="bottom" secondItem="jP3-0E-cDF" secondAttribute="bottom" constant="20" id="zfC-HC-ptY"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="260" y="289"/>
+        </view>
+    </objects>
+</document>

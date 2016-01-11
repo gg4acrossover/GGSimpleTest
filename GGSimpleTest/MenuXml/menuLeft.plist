@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SECTION_0</key>
+	<array>
+		<dict>
+			<key>Draw</key>
+			<string>GGDrawView</string>
+		</dict>
+		<dict>
+			<key>Button </key>
+			<string>GGMenuView</string>
+		</dict>
+	</array>
+	<key>SECTION_1</key>
+	<array>
+		<dict>
+			<key>Header View</key>
+			<string>GGHeaderViewController</string>
+		</dict>
+		<dict>
+			<key>Anim Simple</key>
+			<string>GGAnimView</string>
+		</dict>
+		<dict>
+			<key>AutoLayout</key>
+			<string>GGAutoLayoutViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>
