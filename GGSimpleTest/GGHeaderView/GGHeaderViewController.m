@@ -9,7 +9,7 @@
 #import "GGHeaderViewController.h"
 #import "UIScrollView+GGHeaderView.h"
 
-static CGFloat kHeightHeader = 150.0f;
+static CGFloat kHeightHeader = 145.0f;
 
 @interface GGHeaderViewController () <UITableViewDelegate, UITableViewDataSource>
 
