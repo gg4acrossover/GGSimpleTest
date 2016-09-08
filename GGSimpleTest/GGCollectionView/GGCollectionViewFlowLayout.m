@@ -9,6 +9,7 @@
 #import "GGCollectionViewFlowLayout.h"
 
 static NSInteger const kColumn = 2;
+static CGFloat const kHeaderHeight = 50.0f;
 
 @interface GGCollectionViewFlowLayout()
 
@@ -59,6 +60,13 @@ static NSInteger const kColumn = 2;
     
     for ( NSInteger section = 0; section < self.collectionView.numberOfSections; ++section)
     {
+        // header calculate
+        NSIndexPath *pHeaderIdxPath = [NSIndexPath indexPathForItem:0 inSection:section];
+        UICollectionViewLayoutAttributes *pHeaderAtt = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader withIndexPath:pHeaderIdxPath];
+        pHeaderAtt.frame = CGRectMake( 0.0f, (self.contentHeight + (section ? self.minimumLineSpacing : 0.0f)), [self getContentWidth], kHeaderHeight);
+        [pTempAtt addObject:pHeaderAtt];
+        
+        // cell calculate
         for (NSInteger row = 0; row < [self.collectionView numberOfItemsInSection:section]; ++row)
         {
             NSIndexPath *pIdxPath = [NSIndexPath indexPathForRow:row
@@ -70,8 +78,19 @@ static NSInteger const kColumn = 2;
             NSInteger idxColumn = [self getShortestColumn:arrOffsetY];
             
             CGFloat originX = arrOffsetX[idxColumn];
-    
-            CGFloat originY = arrOffsetY[idxColumn];
+            
+            CGFloat originY = 0;
+            if (row)
+            {
+                originY = arrOffsetY[idxColumn];
+            }
+            else
+            {
+                // reset originY all columns if go to next section
+                originY = CGRectGetMaxY(pHeaderAtt.frame) + self.minimumLineSpacing;
+                [self setOffsetAllColumn:arrOffsetY withValue:originY];
+            }
+            
             
             CGFloat h = (idxColumn % 2) ? 226.0f : 200.0f;
             
@@ -109,6 +128,15 @@ static NSInteger const kColumn = 2;
     }
     
     return minIdx;
+}
+
+- (void)setOffsetAllColumn:(CGFloat*)arrOffsetY
+                    withValue:(CGFloat)value
+{
+    for ( NSInteger i = 0; i < kColumn; ++i)
+    {
+        arrOffsetY[i] = value;
+    }
 }
 
 @end

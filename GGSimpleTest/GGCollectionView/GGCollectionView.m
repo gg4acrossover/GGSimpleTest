@@ -11,6 +11,7 @@
 #import "GGCollectionViewFlowLayout.h"
 
 static NSString *const kIdentifier = @"GGCollectionViewCell";
+static NSString *const kHeaderIdentifier = @"header";
 
 @interface GGCollectionView ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -33,6 +34,8 @@ static NSString *const kIdentifier = @"GGCollectionViewCell";
     [self.collectionView registerNib:[UINib nibWithNibName:kIdentifier bundle:nil]
           forCellWithReuseIdentifier:kIdentifier];
     
+    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kHeaderIdentifier];
+    
     GGCollectionViewFlowLayout *pLayOut = [[GGCollectionViewFlowLayout alloc] init];
     pLayOut.minimumLineSpacing = 10.f;
     pLayOut.minimumInteritemSpacing = 10.f;
@@ -46,12 +49,12 @@ static NSString *const kIdentifier = @"GGCollectionViewCell";
 #pragma mark - Collection view
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 2;
+    return 5;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return 5;
 }
 
 - (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -63,6 +66,21 @@ static NSString *const kIdentifier = @"GGCollectionViewCell";
     pCell.imgView.image = [UIImage imageNamed:pImgName];
     
     return pCell;
+}
+
+- (UICollectionReusableView*)collectionView:(UICollectionView *)collectionView
+          viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    if( [kind isEqualToString:UICollectionElementKindSectionHeader])
+    {
+        UICollectionReusableView *pHeader = [self.collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:kHeaderIdentifier forIndexPath:indexPath];
+        
+        pHeader.backgroundColor = [UIColor lightGrayColor];
+        
+        return pHeader;
+    }
+    
+    return nil;
 }
 
 @end
