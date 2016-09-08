@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16C6C5638C38B4FCBB752903 /* libPods-GGSimpleTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3655333067957DB2C953798 /* libPods-GGSimpleTestTests.a */; };
+		9504F726B8DCCAB275642022 /* libPods-GGSimpleTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E14655B57E8437BF4A68C27A /* libPods-GGSimpleTest.a */; };
+		B52474611D7FF0CF0000B170 /* GGCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B524745F1D7FF0CF0000B170 /* GGCollectionViewCell.m */; };
+		B52474621D7FF0CF0000B170 /* GGCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52474601D7FF0CF0000B170 /* GGCollectionViewCell.xib */; };
+		B52474651D7FFADB0000B170 /* GGCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B52474641D7FFADB0000B170 /* GGCollectionViewFlowLayout.m */; };
+		B53074F81D7ED46C008583D2 /* GGCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B53074F61D7ED46C008583D2 /* GGCollectionView.m */; };
+		B53074F91D7ED46C008583D2 /* GGCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53074F71D7ED46C008583D2 /* GGCollectionView.xib */; };
 		DD1FDB421B984BBF00258F9D /* GGBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1FDB411B984BBF00258F9D /* GGBasicAnimation.m */; };
 		DD2030041B905E8B002DAABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2030031B905E8B002DAABD /* main.m */; };
 		DD2030071B905E8B002DAABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2030061B905E8B002DAABD /* AppDelegate.m */; };
@@ -33,7 +40,6 @@
 		DDDF11861C2BCD7000F993D1 /* GGAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDF11841C2BCD7000F993D1 /* GGAutoLayoutViewController.m */; };
 		DDDF11871C2BCD7000F993D1 /* GGAutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDF11851C2BCD7000F993D1 /* GGAutoLayoutViewController.xib */; };
 		DDF9FE8B1C3F70CD002804A1 /* ParallaxImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DDF9FE8A1C3F70CD002804A1 /* ParallaxImage.jpg */; };
-		FB50768791B729B5EBBC1F71 /* libPods-GGSimpleTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E1A7DA8ED7CC01DCE4CCAB /* libPods-GGSimpleTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +53,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00A327404CA0FC3F1CA08BC1 /* Pods-GGSimpleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSimpleTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGSimpleTest/Pods-GGSimpleTest.release.xcconfig"; sourceTree = "<group>"; };
-		22E1A7DA8ED7CC01DCE4CCAB /* libPods-GGSimpleTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GGSimpleTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B06C08F7C4B4177A68459B69 /* Pods-GGSimpleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSimpleTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGSimpleTest/Pods-GGSimpleTest.debug.xcconfig"; sourceTree = "<group>"; };
+		52C0F9A745296793FF234B2D /* Pods-GGSimpleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSimpleTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGSimpleTest/Pods-GGSimpleTest.release.xcconfig"; sourceTree = "<group>"; };
+		5D3959749C8FAEFE40C965F9 /* Pods-GGSimpleTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSimpleTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGSimpleTestTests/Pods-GGSimpleTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B5409632BA6A42D0E881BAD /* Pods-GGSimpleTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSimpleTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGSimpleTestTests/Pods-GGSimpleTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		A3655333067957DB2C953798 /* libPods-GGSimpleTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GGSimpleTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B524745E1D7FF0CF0000B170 /* GGCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCollectionViewCell.h; sourceTree = "<group>"; };
+		B524745F1D7FF0CF0000B170 /* GGCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCollectionViewCell.m; sourceTree = "<group>"; };
+		B52474601D7FF0CF0000B170 /* GGCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGCollectionViewCell.xib; sourceTree = "<group>"; };
+		B52474631D7FFADB0000B170 /* GGCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		B52474641D7FFADB0000B170 /* GGCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		B53074F51D7ED46C008583D2 /* GGCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCollectionView.h; sourceTree = "<group>"; };
+		B53074F61D7ED46C008583D2 /* GGCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCollectionView.m; sourceTree = "<group>"; };
+		B53074F71D7ED46C008583D2 /* GGCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGCollectionView.xib; sourceTree = "<group>"; };
+		CFF69BBE20B9D3E45E4E2B8C /* Pods-GGSimpleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSimpleTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGSimpleTest/Pods-GGSimpleTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DD1FDB401B984BBF00258F9D /* GGBasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBasicAnimation.h; sourceTree = "<group>"; };
 		DD1FDB411B984BBF00258F9D /* GGBasicAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBasicAnimation.m; sourceTree = "<group>"; };
 		DD202FFE1B905E8B002DAABD /* GGSimpleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGSimpleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +110,7 @@
 		DDDF11841C2BCD7000F993D1 /* GGAutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGAutoLayoutViewController.m; sourceTree = "<group>"; };
 		DDDF11851C2BCD7000F993D1 /* GGAutoLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGAutoLayoutViewController.xib; sourceTree = "<group>"; };
 		DDF9FE8A1C3F70CD002804A1 /* ParallaxImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ParallaxImage.jpg; sourceTree = SOURCE_ROOT; };
+		E14655B57E8437BF4A68C27A /* libPods-GGSimpleTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GGSimpleTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD34C5341BA6A3E6003C5EB8 /* QuartzCore.framework in Frameworks */,
-				FB50768791B729B5EBBC1F71 /* libPods-GGSimpleTest.a in Frameworks */,
+				9504F726B8DCCAB275642022 /* libPods-GGSimpleTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,19 +127,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C6C5638C38B4FCBB752903 /* libPods-GGSimpleTestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		89C03FC05036BE1F08E311D8 /* Pods */ = {
+		B53074F41D7ED453008583D2 /* GGCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				B06C08F7C4B4177A68459B69 /* Pods-GGSimpleTest.debug.xcconfig */,
-				00A327404CA0FC3F1CA08BC1 /* Pods-GGSimpleTest.release.xcconfig */,
+				B53074F51D7ED46C008583D2 /* GGCollectionView.h */,
+				B53074F61D7ED46C008583D2 /* GGCollectionView.m */,
+				B53074F71D7ED46C008583D2 /* GGCollectionView.xib */,
+				B524745E1D7FF0CF0000B170 /* GGCollectionViewCell.h */,
+				B524745F1D7FF0CF0000B170 /* GGCollectionViewCell.m */,
+				B52474601D7FF0CF0000B170 /* GGCollectionViewCell.xib */,
+				B52474631D7FFADB0000B170 /* GGCollectionViewFlowLayout.h */,
+				B52474641D7FFADB0000B170 /* GGCollectionViewFlowLayout.m */,
 			);
-			name = Pods;
+			path = GGCollectionView;
 			sourceTree = "<group>";
 		};
 		DD202FF51B905E8B002DAABD = {
@@ -131,8 +155,8 @@
 				DD2030001B905E8B002DAABD /* GGSimpleTest */,
 				DD20301A1B905E8B002DAABD /* GGSimpleTestTests */,
 				DD202FFF1B905E8B002DAABD /* Products */,
-				89C03FC05036BE1F08E311D8 /* Pods */,
 				EB0EEE9B14C9F0E94C8B5CD5 /* Frameworks */,
+				EA10D72DDD76DC0CDBEBE346 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +172,7 @@
 		DD2030001B905E8B002DAABD /* GGSimpleTest */ = {
 			isa = PBXGroup;
 			children = (
+				B53074F41D7ED453008583D2 /* GGCollectionView */,
 				DDDF11821C2BCD1600F993D1 /* GGAutoLayout */,
 				DD429A211C2A5BB100A9D867 /* GGHeaderView */,
 				DD6E04DC1B94751D00DFADD7 /* Model */,
@@ -280,11 +305,23 @@
 			path = GGAutoLayout;
 			sourceTree = "<group>";
 		};
+		EA10D72DDD76DC0CDBEBE346 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFF69BBE20B9D3E45E4E2B8C /* Pods-GGSimpleTest.debug.xcconfig */,
+				52C0F9A745296793FF234B2D /* Pods-GGSimpleTest.release.xcconfig */,
+				5D3959749C8FAEFE40C965F9 /* Pods-GGSimpleTestTests.debug.xcconfig */,
+				7B5409632BA6A42D0E881BAD /* Pods-GGSimpleTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EB0EEE9B14C9F0E94C8B5CD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				DD34C5331BA6A3E6003C5EB8 /* QuartzCore.framework */,
-				22E1A7DA8ED7CC01DCE4CCAB /* libPods-GGSimpleTest.a */,
+				E14655B57E8437BF4A68C27A /* libPods-GGSimpleTest.a */,
+				A3655333067957DB2C953798 /* libPods-GGSimpleTestTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,11 +333,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD2030211B905E8B002DAABD /* Build configuration list for PBXNativeTarget "GGSimpleTest" */;
 			buildPhases = (
-				801A83DCCC0BC0FB9DE5EE9B /* Check Pods Manifest.lock */,
+				9EB453EC8F21AE5A49CBEDD4 /* [CP] Check Pods Manifest.lock */,
 				DD202FFA1B905E8B002DAABD /* Sources */,
 				DD202FFB1B905E8B002DAABD /* Frameworks */,
 				DD202FFC1B905E8B002DAABD /* Resources */,
-				09CDDC9B0C625945317FD137 /* Copy Pods Resources */,
+				CC4F388593C40D70C36EA698 /* [CP] Embed Pods Frameworks */,
+				6D402AF011B5BF43E51AB819 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -315,9 +353,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD2030241B905E8B002DAABD /* Build configuration list for PBXNativeTarget "GGSimpleTestTests" */;
 			buildPhases = (
+				ADDAD88D3A634CA6C8F65970 /* [CP] Check Pods Manifest.lock */,
 				DD2030131B905E8B002DAABD /* Sources */,
 				DD2030141B905E8B002DAABD /* Frameworks */,
 				DD2030151B905E8B002DAABD /* Resources */,
+				51FC2E7CE5E1B7F6B5861CA2 /* [CP] Embed Pods Frameworks */,
+				F23CB683CE7899DF666D5873 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -373,6 +414,8 @@
 			files = (
 				DD2030121B905E8B002DAABD /* LaunchScreen.xib in Resources */,
 				DD6E04C91B9474B900DFADD7 /* GGAnimView.xib in Resources */,
+				B53074F91D7ED46C008583D2 /* GGCollectionView.xib in Resources */,
+				B52474621D7FF0CF0000B170 /* GGCollectionViewCell.xib in Resources */,
 				DD20300F1B905E8B002DAABD /* Images.xcassets in Resources */,
 				DDDF11871C2BCD7000F993D1 /* GGAutoLayoutViewController.xib in Resources */,
 				DD62E4071B9D47BC00188C16 /* GGLeftMenu.xib in Resources */,
@@ -393,14 +436,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		09CDDC9B0C625945317FD137 /* Copy Pods Resources */ = {
+		51FC2E7CE5E1B7F6B5861CA2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GGSimpleTestTests/Pods-GGSimpleTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D402AF011B5BF43E51AB819 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,19 +466,64 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GGSimpleTest/Pods-GGSimpleTest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		801A83DCCC0BC0FB9DE5EE9B /* Check Pods Manifest.lock */ = {
+		9EB453EC8F21AE5A49CBEDD4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ADDAD88D3A634CA6C8F65970 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC4F388593C40D70C36EA698 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GGSimpleTest/Pods-GGSimpleTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F23CB683CE7899DF666D5873 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GGSimpleTestTests/Pods-GGSimpleTestTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -432,8 +535,11 @@
 			files = (
 				DD2030071B905E8B002DAABD /* AppDelegate.m in Sources */,
 				DD6E04D41B9474CE00DFADD7 /* GGDrawView.m in Sources */,
+				B52474611D7FF0CF0000B170 /* GGCollectionViewCell.m in Sources */,
+				B53074F81D7ED46C008583D2 /* GGCollectionView.m in Sources */,
 				DD8478321BBA38A300653B48 /* GGSpinerLayer.m in Sources */,
 				DD6E04CE1B9474C200DFADD7 /* GGMenuView.m in Sources */,
+				B52474651D7FFADB0000B170 /* GGCollectionViewFlowLayout.m in Sources */,
 				DD429A241C2A5BE700A9D867 /* GGHeaderViewController.m in Sources */,
 				DD6E04DA1B9474DA00DFADD7 /* GGLeftMenu.m in Sources */,
 				DD6E04DF1B94754200DFADD7 /* GGParseLeftMenu.m in Sources */,
@@ -570,9 +676,10 @@
 		};
 		DD2030221B905E8B002DAABD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B06C08F7C4B4177A68459B69 /* Pods-GGSimpleTest.debug.xcconfig */;
+			baseConfigurationReference = CFF69BBE20B9D3E45E4E2B8C /* Pods-GGSimpleTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GGSimpleTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -581,9 +688,10 @@
 		};
 		DD2030231B905E8B002DAABD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00A327404CA0FC3F1CA08BC1 /* Pods-GGSimpleTest.release.xcconfig */;
+			baseConfigurationReference = 52C0F9A745296793FF234B2D /* Pods-GGSimpleTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GGSimpleTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -592,6 +700,7 @@
 		};
 		DD2030251B905E8B002DAABD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D3959749C8FAEFE40C965F9 /* Pods-GGSimpleTestTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -611,6 +720,7 @@
 		};
 		DD2030261B905E8B002DAABD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B5409632BA6A42D0E881BAD /* Pods-GGSimpleTestTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

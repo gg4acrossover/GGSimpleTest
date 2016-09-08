@@ -27,6 +27,10 @@
 			<key>AutoLayout</key>
 			<string>GGAutoLayoutViewController</string>
 		</dict>
+		<dict>
+			<key>CollectionView</key>
+			<string>GGCollectionView</string>
+		</dict>
 	</array>
 </dict>
 </plist>
