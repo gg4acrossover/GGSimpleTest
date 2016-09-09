@@ -47,6 +47,8 @@ static CGFloat const kHeaderHeight = 50.0f;
 
 - (void)computeAttributesWithItemWidth:(CGFloat)w
 {
+    self.contentHeight = 0.0f;
+    
     CGFloat arrOffsetX[kColumn] = {0};
     
     CGFloat arrOffsetY[kColumn] = {0};
@@ -91,8 +93,11 @@ static CGFloat const kHeaderHeight = 50.0f;
                 [self setOffsetAllColumn:arrOffsetY withValue:originY];
             }
             
-            
-            CGFloat h = (idxColumn % 2) ? 226.0f : 200.0f;
+            CGFloat h = 0.0f; // default
+            if ([self.delegate respondsToSelector:@selector(collectionView:getHeighForCellAtIdxPath:withCellWidth:)])
+            {
+                h = [self.delegate collectionView:self.collectionView getHeighForCellAtIdxPath:pIdxPath withCellWidth:[self getItemWidth]];
+            }
             
             pAtt.frame = CGRectMake(originX, originY, [self getItemWidth], h);
             

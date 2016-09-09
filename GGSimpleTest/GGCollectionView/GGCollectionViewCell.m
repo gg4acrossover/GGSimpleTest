@@ -14,6 +14,7 @@
 {
     [super awakeFromNib];
     self.imgView.backgroundColor = [UIColor lightGrayColor];
+    [self.imgView setContentMode:UIViewContentModeScaleAspectFit];
 }
 
 @end

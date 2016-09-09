@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol  GGCollectionViewFlowLayoutDelegate<NSObject>
+
+- (CGFloat) collectionView:(UICollectionView*)collectionView
+  getHeighForCellAtIdxPath:(NSIndexPath*)idxPath
+             withCellWidth:(CGFloat)w;
+
+@end
+
 @interface GGCollectionViewFlowLayout : UICollectionViewFlowLayout
+
+@property( weak, nonatomic) id<GGCollectionViewFlowLayoutDelegate> delegate;
 
 @end
