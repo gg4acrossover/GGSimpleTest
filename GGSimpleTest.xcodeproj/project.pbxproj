@@ -14,6 +14,13 @@
 		B52474651D7FFADB0000B170 /* GGCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B52474641D7FFADB0000B170 /* GGCollectionViewFlowLayout.m */; };
 		B53074F81D7ED46C008583D2 /* GGCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B53074F61D7ED46C008583D2 /* GGCollectionView.m */; };
 		B53074F91D7ED46C008583D2 /* GGCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53074F71D7ED46C008583D2 /* GGCollectionView.xib */; };
+		B554E92F1D87DC2600C97783 /* GGPresentAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B554E92E1D87DC2600C97783 /* GGPresentAnimationManager.m */; };
+		B554E9331D87EA5600C97783 /* UIView+cloneView.m in Sources */ = {isa = PBXBuildFile; fileRef = B554E9321D87EA5600C97783 /* UIView+cloneView.m */; };
+		B554E9361D87F7F800C97783 /* GGAnimationTransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B554E9351D87F7F800C97783 /* GGAnimationTransitionVC.m */; };
+		B597BA1C1D86A876009F8717 /* GGCollectionViewNavDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B597BA1B1D86A876009F8717 /* GGCollectionViewNavDelegate.m */; };
+		B597BA201D86A939009F8717 /* GGPageViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B597BA1E1D86A939009F8717 /* GGPageViewVC.m */; };
+		B597BA211D86A939009F8717 /* GGPageViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B597BA1F1D86A939009F8717 /* GGPageViewVC.xib */; };
+		B5F8865E1D8BEC05009AEF1F /* GGDismissAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F8865D1D8BEC05009AEF1F /* GGDismissAnimationVC.m */; };
 		DD1FDB421B984BBF00258F9D /* GGBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1FDB411B984BBF00258F9D /* GGBasicAnimation.m */; };
 		DD2030041B905E8B002DAABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2030031B905E8B002DAABD /* main.m */; };
 		DD2030071B905E8B002DAABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2030061B905E8B002DAABD /* AppDelegate.m */; };
@@ -65,6 +72,19 @@
 		B53074F51D7ED46C008583D2 /* GGCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCollectionView.h; sourceTree = "<group>"; };
 		B53074F61D7ED46C008583D2 /* GGCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCollectionView.m; sourceTree = "<group>"; };
 		B53074F71D7ED46C008583D2 /* GGCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGCollectionView.xib; sourceTree = "<group>"; };
+		B554E92D1D87DC2600C97783 /* GGPresentAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPresentAnimationManager.h; sourceTree = "<group>"; };
+		B554E92E1D87DC2600C97783 /* GGPresentAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPresentAnimationManager.m; sourceTree = "<group>"; };
+		B554E9311D87EA5600C97783 /* UIView+cloneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+cloneView.h"; sourceTree = "<group>"; };
+		B554E9321D87EA5600C97783 /* UIView+cloneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+cloneView.m"; sourceTree = "<group>"; };
+		B554E9341D87F7F800C97783 /* GGAnimationTransitionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGAnimationTransitionVC.h; sourceTree = "<group>"; };
+		B554E9351D87F7F800C97783 /* GGAnimationTransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGAnimationTransitionVC.m; sourceTree = "<group>"; };
+		B597BA1A1D86A876009F8717 /* GGCollectionViewNavDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCollectionViewNavDelegate.h; sourceTree = "<group>"; };
+		B597BA1B1D86A876009F8717 /* GGCollectionViewNavDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCollectionViewNavDelegate.m; sourceTree = "<group>"; };
+		B597BA1D1D86A939009F8717 /* GGPageViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPageViewVC.h; sourceTree = "<group>"; };
+		B597BA1E1D86A939009F8717 /* GGPageViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPageViewVC.m; sourceTree = "<group>"; };
+		B597BA1F1D86A939009F8717 /* GGPageViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGPageViewVC.xib; sourceTree = "<group>"; };
+		B5F8865C1D8BEC05009AEF1F /* GGDismissAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGDismissAnimationVC.h; sourceTree = "<group>"; };
+		B5F8865D1D8BEC05009AEF1F /* GGDismissAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGDismissAnimationVC.m; sourceTree = "<group>"; };
 		CFF69BBE20B9D3E45E4E2B8C /* Pods-GGSimpleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSimpleTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGSimpleTest/Pods-GGSimpleTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DD1FDB401B984BBF00258F9D /* GGBasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBasicAnimation.h; sourceTree = "<group>"; };
 		DD1FDB411B984BBF00258F9D /* GGBasicAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBasicAnimation.m; sourceTree = "<group>"; };
@@ -145,8 +165,28 @@
 				B52474601D7FF0CF0000B170 /* GGCollectionViewCell.xib */,
 				B52474631D7FFADB0000B170 /* GGCollectionViewFlowLayout.h */,
 				B52474641D7FFADB0000B170 /* GGCollectionViewFlowLayout.m */,
+				B597BA1A1D86A876009F8717 /* GGCollectionViewNavDelegate.h */,
+				B597BA1B1D86A876009F8717 /* GGCollectionViewNavDelegate.m */,
+				B597BA1D1D86A939009F8717 /* GGPageViewVC.h */,
+				B597BA1E1D86A939009F8717 /* GGPageViewVC.m */,
+				B597BA1F1D86A939009F8717 /* GGPageViewVC.xib */,
+				B554E92D1D87DC2600C97783 /* GGPresentAnimationManager.h */,
+				B554E92E1D87DC2600C97783 /* GGPresentAnimationManager.m */,
+				B554E9341D87F7F800C97783 /* GGAnimationTransitionVC.h */,
+				B554E9351D87F7F800C97783 /* GGAnimationTransitionVC.m */,
+				B5F8865C1D8BEC05009AEF1F /* GGDismissAnimationVC.h */,
+				B5F8865D1D8BEC05009AEF1F /* GGDismissAnimationVC.m */,
 			);
 			path = GGCollectionView;
+			sourceTree = "<group>";
+		};
+		B554E9301D87EA3A00C97783 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B554E9311D87EA5600C97783 /* UIView+cloneView.h */,
+				B554E9321D87EA5600C97783 /* UIView+cloneView.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		DD202FF51B905E8B002DAABD = {
@@ -172,6 +212,7 @@
 		DD2030001B905E8B002DAABD /* GGSimpleTest */ = {
 			isa = PBXGroup;
 			children = (
+				B554E9301D87EA3A00C97783 /* Helper */,
 				B53074F41D7ED453008583D2 /* GGCollectionView */,
 				DDDF11821C2BCD1600F993D1 /* GGAutoLayout */,
 				DD429A211C2A5BB100A9D867 /* GGHeaderView */,
@@ -420,6 +461,7 @@
 				DDDF11871C2BCD7000F993D1 /* GGAutoLayoutViewController.xib in Resources */,
 				DD62E4071B9D47BC00188C16 /* GGLeftMenu.xib in Resources */,
 				DD6E04CF1B9474C200DFADD7 /* GGMenuView.xib in Resources */,
+				B597BA211D86A939009F8717 /* GGPageViewVC.xib in Resources */,
 				DD6E04D51B9474CE00DFADD7 /* GGDrawView.xib in Resources */,
 				DD6E04B91B945CFF00DFADD7 /* menuLeft.plist in Resources */,
 				DDF9FE8B1C3F70CD002804A1 /* ParallaxImage.jpg in Resources */,
@@ -533,6 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B597BA201D86A939009F8717 /* GGPageViewVC.m in Sources */,
 				DD2030071B905E8B002DAABD /* AppDelegate.m in Sources */,
 				DD6E04D41B9474CE00DFADD7 /* GGDrawView.m in Sources */,
 				B52474611D7FF0CF0000B170 /* GGCollectionViewCell.m in Sources */,
@@ -544,11 +587,16 @@
 				DD6E04DA1B9474DA00DFADD7 /* GGLeftMenu.m in Sources */,
 				DD6E04DF1B94754200DFADD7 /* GGParseLeftMenu.m in Sources */,
 				DD2030041B905E8B002DAABD /* main.m in Sources */,
+				B5F8865E1D8BEC05009AEF1F /* GGDismissAnimationVC.m in Sources */,
+				B554E92F1D87DC2600C97783 /* GGPresentAnimationManager.m in Sources */,
 				DD34C5371BA6C07B003C5EB8 /* GGCircleView.m in Sources */,
 				DD75F15E1C2A87A600ECFB84 /* UIScrollView+GGHeaderView.m in Sources */,
+				B554E9331D87EA5600C97783 /* UIView+cloneView.m in Sources */,
+				B597BA1C1D86A876009F8717 /* GGCollectionViewNavDelegate.m in Sources */,
 				DD6E04C81B9474B900DFADD7 /* GGAnimView.m in Sources */,
 				DDDF11861C2BCD7000F993D1 /* GGAutoLayoutViewController.m in Sources */,
 				DD8478351BBA472400653B48 /* GGBtnAnim.m in Sources */,
+				B554E9361D87F7F800C97783 /* GGAnimationTransitionVC.m in Sources */,
 				DD1FDB421B984BBF00258F9D /* GGBasicAnimation.m in Sources */,
 				DD70B8781B95B09F000089FA /* GGAnimStransition.m in Sources */,
 			);
