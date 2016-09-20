@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class GGAnimationTransitionVC;
+
 @interface GGPageViewVC : UIViewController
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -15,5 +17,7 @@
 @property (strong, nonatomic) NSArray<NSString*> *urlImage;
 
 @property (strong, nonatomic) NSIndexPath *currentIdxPath;
+
+@property (weak, nonatomic) GGAnimationTransitionVC *transitionManager;
 
 @end

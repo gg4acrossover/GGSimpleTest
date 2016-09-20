@@ -19,6 +19,8 @@
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 {
+    NSLog(@"from %@ - to %@", self.animManager.InitIdxPath, self.animManager.destinationIdxPath);
+    
     ///////// FROM VC
     UIViewController<GGPresentedVCDelegate> *pFromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     

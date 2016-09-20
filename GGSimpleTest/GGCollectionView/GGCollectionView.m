@@ -129,18 +129,7 @@ static NSString *const kHeaderIdentifier = @"header";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    GGPageViewVC *pVC = [[GGPageViewVC alloc] initWithNibName:nil bundle:nil];
-    
-    pVC.currentIdxPath = indexPath;
-    pVC.urlImage = self.urlImageList;
-    
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"Back"
-                                                                 style:UIBarButtonItemStylePlain
-                                                                target:nil
-                                                                action:nil];
-    
-    [self.navigationItem setBackBarButtonItem:backItem];
-    
+    // prepare animManager
     self.animManager = [[GGAnimationTransitionVC alloc] init];
     
     self.animManager.InitIdxPath = indexPath;
@@ -148,8 +137,23 @@ static NSString *const kHeaderIdentifier = @"header";
     
     self.animManager.presentAnim = [[GGPresentAnimationManager alloc] init];
     self.animManager.dismissAnim = [[GGDismissAnimationVC alloc] init];
-
+    
     self.navigationController.delegate = self.animManager;
+
+    // prepare viewcontroller
+    GGPageViewVC *pVC = [[GGPageViewVC alloc] initWithNibName:nil bundle:nil];
+    
+    pVC.currentIdxPath = indexPath;
+    pVC.urlImage = self.urlImageList;
+    pVC.transitionManager = self.animManager;
+    
+    // show title "back" in navigation left button for next viewcontroller
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"Back"
+                                                                 style:UIBarButtonItemStylePlain
+                                                                target:nil
+                                                                action:nil];
+    
+    [self.navigationItem setBackBarButtonItem:backItem];
     
     [self.navigationController pushViewController:pVC animated:YES];
 }
@@ -237,12 +241,12 @@ static NSString *const kHeaderIdentifier = @"header";
 {
     if ( !isPresenting && ![[self.collectionView indexPathsForVisibleItems] containsObject:idxPath])
     {
-        [self.collectionView reloadData];
+        
         
         [self.collectionView scrollToItemAtIndexPath:idxPath
                                     atScrollPosition:UICollectionViewScrollPositionCenteredVertically
-                                            animated:YES];
-        
+                                            animated:NO];
+        [self.collectionView reloadData];
         [self.collectionView layoutIfNeeded];
     }
 }

@@ -9,6 +9,7 @@
 #import "GGPageViewVC.h"
 #import "GGAnimationTransitionVC.h"
 #import <UIImageView+WebCache.h>
+#import "GGAnimationTransitionVC.h"
 
 static NSString *const kIdentifier = @"kIdentifier";
 static NSInteger const kTagImage = 200;
@@ -59,6 +60,12 @@ static NSInteger const kTagImage = 200;
         
         [self.collectionView reloadData];
     }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
 }
 
 #pragma mark - Get & set
@@ -129,7 +136,16 @@ static NSInteger const kTagImage = 200;
     
     // update for vc
     self.title = [NSString stringWithFormat:@"[%li - %li]", (long)indexPath.section, (long)indexPath.row];
-        
+    
+    // update idx path
+    if ([[self.collectionView indexPathsForVisibleItems] containsObject:self.currentIdxPath])
+    {
+        self.currentIdxPath = indexPath;
+        self.transitionManager.destinationIdxPath = self.currentIdxPath;
+        self.transitionManager.InitIdxPath = self.currentIdxPath;
+
+    }
+    
     return pCell;
 }
 
