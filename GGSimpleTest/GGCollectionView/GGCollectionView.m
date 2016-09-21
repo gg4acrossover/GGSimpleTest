@@ -24,7 +24,6 @@ static NSString *const kHeaderIdentifier = @"header";
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) NSArray<NSString*> *urlImageList;
-@property (strong, nonatomic) NSMutableDictionary<NSIndexPath*,UIImage*> *cacheImg;
 @property (strong, nonatomic) GGAnimationTransitionVC *animManager;
 
 @end
@@ -39,7 +38,6 @@ static NSString *const kHeaderIdentifier = @"header";
     if ( self)
     {
         [self createURLImage];
-        self.cacheImg = [NSMutableDictionary dictionary];
     }
     
     return self;
@@ -91,9 +89,12 @@ static NSString *const kHeaderIdentifier = @"header";
 {
     GGCollectionViewCell *pCell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kIdentifier forIndexPath:indexPath];
     
-    if (self.cacheImg[indexPath])
+    SDImageCache *pImgCache = [SDImageCache sharedImageCache];
+    UIImage *pCurrentImage = [pImgCache imageFromMemoryCacheForKey:self.urlImageList[indexPath.row]];
+    
+    if (pCurrentImage)
     {
-        pCell.imgView.image = self.cacheImg[indexPath];
+        pCell.imgView.image = pCurrentImage;
     }
     else
     {
@@ -188,13 +189,13 @@ static NSString *const kHeaderIdentifier = @"header";
     
     SDWebImageManager *pManager = [SDWebImageManager sharedManager];
     [pManager downloadImageWithURL:[NSURL URLWithString:pUrlStr]
-                          options:SDWebImageRetryFailed
-                         progress:nil
-                        completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL)
+                           options:SDWebImageRetryFailed
+                          progress:nil
+                         completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL)
      {
          if (image && !error)
          {
-             self.cacheImg[idxPath] = image;
+             //self.cacheImg[idxPath] = image;
              
              dispatch_async(dispatch_get_main_queue(), ^{
                  [self.collectionView reloadItemsAtIndexPaths:@[idxPath]];
@@ -210,9 +211,12 @@ static NSString *const kHeaderIdentifier = @"header";
 {
     CGFloat newH = 0.0f;
     
-    if (self.cacheImg[idxPath])
+    SDImageCache *pImgCache = [SDImageCache sharedImageCache];
+    UIImage *pCurrentImage = [pImgCache imageFromMemoryCacheForKey:self.urlImageList[idxPath.row]];
+    
+    if (pCurrentImage)
     {
-        newH = self.cacheImg[idxPath].size.height *  w / self.cacheImg[idxPath].size.width;
+        newH = pCurrentImage.size.height *  w / pCurrentImage.size.width;
     }
     
     // show log height estimate
@@ -225,9 +229,20 @@ static NSString *const kHeaderIdentifier = @"header";
 #pragma mark - Present animation delegate
 - (CGRect)initialFrame:(NSIndexPath *)idxPath isPresenting:(BOOL)isPresenting
 {
+    // if cell is loaded
     GGCollectionViewCell *pCell = (GGCollectionViewCell*)[self.collectionView cellForItemAtIndexPath:idxPath];
     
-    return [pCell convertRect:pCell.imgView.frame toView:self.view];
+    if (pCell)
+    {
+        return [pCell convertRect:pCell.imgView.frame toView:self.view];
+    }
+    
+    
+    UICollectionViewLayoutAttributes *pAtt = [self.collectionView layoutAttributesForItemAtIndexPath:idxPath];
+    CGRect imageRec = pAtt.frame;
+    imageRec.size.height -= 45.0f;
+    
+    return [self.collectionView convertRect:imageRec toView:self.view];
 }
 
 - (UIView*)initialView:(NSIndexPath *)idxPath isPresenting:(BOOL)isPresenting
@@ -241,13 +256,18 @@ static NSString *const kHeaderIdentifier = @"header";
 {
     if ( !isPresenting && ![[self.collectionView indexPathsForVisibleItems] containsObject:idxPath])
     {
+        __weak typeof (self) thiz = self;
         
+        [thiz.collectionView performBatchUpdates:nil completion:nil];
         
-        [self.collectionView scrollToItemAtIndexPath:idxPath
+        [thiz.collectionView scrollToItemAtIndexPath:idxPath
                                     atScrollPosition:UICollectionViewScrollPositionCenteredVertically
                                             animated:NO];
-        [self.collectionView reloadData];
-        [self.collectionView layoutIfNeeded];
+        
+        [thiz.collectionView reloadData];
+        
+        [thiz.collectionView layoutIfNeeded];
+
     }
 }
 

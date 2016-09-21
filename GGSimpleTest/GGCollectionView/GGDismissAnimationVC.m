@@ -19,7 +19,7 @@
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    NSLog(@"from %@ - to %@", self.animManager.InitIdxPath, self.animManager.destinationIdxPath);
+    //NSLog(@"from %@ - to %@", self.animManager.InitIdxPath, self.animManager.destinationIdxPath);
     
     ///////// FROM VC
     UIViewController<GGPresentedVCDelegate> *pFromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
@@ -42,11 +42,12 @@
     
     [pToVC prepareViewAppear:self.animManager.InitIdxPath isPresenting:NO];
     pToVC.view.frame = [transitionContext finalFrameForViewController:pToVC];
+    
     pToVC.view.alpha = 0.0f;
     
     // frame for image when finish transition
     CGRect descriptionFrame = [pToVC initialFrame:self.animManager.InitIdxPath isPresenting:NO];
-    
+    NSLog(@"%@", NSStringFromCGRect(descriptionFrame));
     
     ////////// FREPARE
     UIView *pContainer = [transitionContext containerView];

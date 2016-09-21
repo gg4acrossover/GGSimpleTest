@@ -24,6 +24,7 @@
     UIViewController<GGPresentingVCDelegate> *pRootVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     
     CGRect initFrame = [pRootVC initialFrame:self.animManager.InitIdxPath isPresenting:YES];
+    [pRootVC prepareViewAppear:self.animManager.InitIdxPath isPresenting:YES];
     
     ////////// TO VC
     UIViewController<GGPresentedVCDelegate> *pToVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
