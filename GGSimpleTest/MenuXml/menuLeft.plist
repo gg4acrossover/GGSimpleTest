@@ -12,6 +12,14 @@
 			<key>Button </key>
 			<string>GGMenuView</string>
 		</dict>
+		<dict>
+			<key>Reactions</key>
+			<string>GGFacebookReactionsVC</string>
+		</dict>
+		<dict>
+			<key>PageView</key>
+			<string>GGPageViewContainer</string>
+		</dict>
 	</array>
 	<key>SECTION_1</key>
 	<array>
@@ -30,6 +38,10 @@
 		<dict>
 			<key>CollectionView</key>
 			<string>GGCollectionView</string>
+		</dict>
+		<dict>
+			<key>FlowLayout Anim</key>
+			<string>GGCollectionViewAnimation</string>
 		</dict>
 	</array>
 </dict>

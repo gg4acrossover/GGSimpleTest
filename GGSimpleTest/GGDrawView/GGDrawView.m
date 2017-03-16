@@ -9,6 +9,7 @@
 #import "GGDrawView.h"
 #import "GGCircleView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "UIViewController+MenuBar.h"
 
 @interface GGDrawView ()
 
@@ -19,6 +20,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self addHumbergerMenuLeftPosition];
     
     if (!self.title)
     {

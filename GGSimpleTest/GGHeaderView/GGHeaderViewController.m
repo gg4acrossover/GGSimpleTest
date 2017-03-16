@@ -8,6 +8,7 @@
 
 #import "GGHeaderViewController.h"
 #import "UIScrollView+GGHeaderView.h"
+#import "UIViewController+MenuBar.h"
 
 static CGFloat kHeightHeader = 150.0f;
 
@@ -28,6 +29,9 @@ static CGFloat kHeightHeader = 150.0f;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self addHumbergerMenuLeftPosition];
+    
     // Do any additional setup after loading the view.
     self.mTblView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds
                                                  style:UITableViewStylePlain];

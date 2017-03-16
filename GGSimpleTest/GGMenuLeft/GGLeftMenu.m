@@ -10,14 +10,6 @@
 #import "MFSideMenu.h"
 
 /**
- * menu list
-**/
-#import "GGDrawView.h"
-#import "GGMenuView.h"
-#import "GGAnimView.h"
-#import "GGHeaderViewController.h"
-
-/**
  * menu model
 **/
 #import "GGParseLeftMenu.h"

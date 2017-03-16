@@ -8,6 +8,7 @@
 
 #import "GGMenuView.h"
 #import "GGBtnAnim.h"
+#import "UIViewController+MenuBar.h"
 
 @interface GGMenuView ()
 
@@ -17,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self addHumbergerMenuLeftPosition];
+    
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = [UIColor blackColor];
     
@@ -24,7 +28,6 @@
     [self.view addSubview:pBtnAnim];
     [pBtnAnim setTitle:@"Click Here" forState:UIControlStateNormal];
     [pBtnAnim addTarget:self action:@selector(PresentViewController:) forControlEvents:UIControlEventTouchUpInside];
-
 }
 
 -(void)PresentViewController:(UIButton*)btn

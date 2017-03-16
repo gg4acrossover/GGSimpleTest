@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SCPageViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SCScrollView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +42,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1A8D756F073C8A2B71F5CBD25664DFCC</key>
+		<key>4AE147B9B0380064A5089198B1386C1E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>786C722C565E1DA01257E620DAC73932</key>
+		<key>688B34C11D93D0D53FE7C5A739C650A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6F00DF35DA3F00E9914B2EA25FF2690F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1BE1C057B6D2B59FBE646A9960EB7C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,6 +7,7 @@
 //
 
 #import "GGAutoLayoutViewController.h"
+#import "UIViewController+MenuBar.h"
 
 @interface GGAutoLayoutViewController ()
 
@@ -21,6 +22,7 @@
 {
     [super viewDidLoad];
     
+    [self addHumbergerMenuLeftPosition];
 }
 
 @end

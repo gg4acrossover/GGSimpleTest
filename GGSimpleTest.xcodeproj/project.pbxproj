@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		16C6C5638C38B4FCBB752903 /* libPods-GGSimpleTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3655333067957DB2C953798 /* libPods-GGSimpleTestTests.a */; };
 		9504F726B8DCCAB275642022 /* libPods-GGSimpleTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E14655B57E8437BF4A68C27A /* libPods-GGSimpleTest.a */; };
+		B5086CC71E10EFAD00949858 /* GGPageViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5086CC51E10EFAD00949858 /* GGPageViewContainer.m */; };
+		B5086CC81E10EFAD00949858 /* GGPageViewContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5086CC61E10EFAD00949858 /* GGPageViewContainer.xib */; };
+		B514F82B1E725218008A302B /* UIViewController+MenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B514F82A1E725218008A302B /* UIViewController+MenuBar.m */; };
 		B52474611D7FF0CF0000B170 /* GGCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B524745F1D7FF0CF0000B170 /* GGCollectionViewCell.m */; };
 		B52474621D7FF0CF0000B170 /* GGCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52474601D7FF0CF0000B170 /* GGCollectionViewCell.xib */; };
 		B52474651D7FFADB0000B170 /* GGCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B52474641D7FFADB0000B170 /* GGCollectionViewFlowLayout.m */; };
@@ -17,9 +20,23 @@
 		B554E92F1D87DC2600C97783 /* GGPresentAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B554E92E1D87DC2600C97783 /* GGPresentAnimationManager.m */; };
 		B554E9331D87EA5600C97783 /* UIView+cloneView.m in Sources */ = {isa = PBXBuildFile; fileRef = B554E9321D87EA5600C97783 /* UIView+cloneView.m */; };
 		B554E9361D87F7F800C97783 /* GGAnimationTransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B554E9351D87F7F800C97783 /* GGAnimationTransitionVC.m */; };
+		B58226A11E13CCF6005DE054 /* GGPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B58226A01E13CCF6005DE054 /* GGPageVC.m */; };
+		B58226A41E13CE0C005DE054 /* GGPageViewParentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B58226A31E13CE0C005DE054 /* GGPageViewParentVC.m */; };
 		B597BA1C1D86A876009F8717 /* GGCollectionViewNavDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B597BA1B1D86A876009F8717 /* GGCollectionViewNavDelegate.m */; };
 		B597BA201D86A939009F8717 /* GGPageViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B597BA1E1D86A939009F8717 /* GGPageViewVC.m */; };
 		B597BA211D86A939009F8717 /* GGPageViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B597BA1F1D86A939009F8717 /* GGPageViewVC.xib */; };
+		B59E22FF1DF17C1200A94100 /* GGFacebookReactionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E22FD1DF17C1200A94100 /* GGFacebookReactionsVC.m */; };
+		B59E23001DF17C1200A94100 /* GGFacebookReactionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59E22FE1DF17C1200A94100 /* GGFacebookReactionsVC.xib */; };
+		B5B134A91DD977FC002CD433 /* GGCollectionViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B134A71DD977FC002CD433 /* GGCollectionViewAnimation.m */; };
+		B5B134AA1DD977FC002CD433 /* GGCollectionViewAnimation.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B134A81DD977FC002CD433 /* GGCollectionViewAnimation.xib */; };
+		B5B134AE1DD978A6002CD433 /* GGListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B134AC1DD978A6002CD433 /* GGListCollectionViewCell.m */; };
+		B5B134AF1DD978A6002CD433 /* GGListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B134AD1DD978A6002CD433 /* GGListCollectionViewCell.xib */; };
+		B5B134B31DD978CF002CD433 /* GGGridCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B134B11DD978CF002CD433 /* GGGridCollectionViewCell.m */; };
+		B5B134B41DD978CF002CD433 /* GGGridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B134B21DD978CF002CD433 /* GGGridCollectionViewCell.xib */; };
+		B5C6BA4C1E1227A800DA4397 /* GGSelectionMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C6BA4A1E1227A800DA4397 /* GGSelectionMenuViewController.m */; };
+		B5C6BA4D1E1227A800DA4397 /* GGSelectionMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5C6BA4B1E1227A800DA4397 /* GGSelectionMenuViewController.xib */; };
+		B5C6BA511E124B1000DA4397 /* GGSelectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C6BA4F1E124B1000DA4397 /* GGSelectionViewCell.m */; };
+		B5C6BA521E124B1000DA4397 /* GGSelectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5C6BA501E124B1000DA4397 /* GGSelectionViewCell.xib */; };
 		B5F8865E1D8BEC05009AEF1F /* GGDismissAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F8865D1D8BEC05009AEF1F /* GGDismissAnimationVC.m */; };
 		DD1FDB421B984BBF00258F9D /* GGBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1FDB411B984BBF00258F9D /* GGBasicAnimation.m */; };
 		DD2030041B905E8B002DAABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2030031B905E8B002DAABD /* main.m */; };
@@ -64,6 +81,11 @@
 		5D3959749C8FAEFE40C965F9 /* Pods-GGSimpleTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSimpleTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGSimpleTestTests/Pods-GGSimpleTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B5409632BA6A42D0E881BAD /* Pods-GGSimpleTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSimpleTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGSimpleTestTests/Pods-GGSimpleTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		A3655333067957DB2C953798 /* libPods-GGSimpleTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GGSimpleTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5086CC41E10EFAD00949858 /* GGPageViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPageViewContainer.h; sourceTree = "<group>"; };
+		B5086CC51E10EFAD00949858 /* GGPageViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPageViewContainer.m; sourceTree = "<group>"; };
+		B5086CC61E10EFAD00949858 /* GGPageViewContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGPageViewContainer.xib; sourceTree = "<group>"; };
+		B514F8291E725218008A302B /* UIViewController+MenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MenuBar.h"; sourceTree = "<group>"; };
+		B514F82A1E725218008A302B /* UIViewController+MenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MenuBar.m"; sourceTree = "<group>"; };
 		B524745E1D7FF0CF0000B170 /* GGCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCollectionViewCell.h; sourceTree = "<group>"; };
 		B524745F1D7FF0CF0000B170 /* GGCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCollectionViewCell.m; sourceTree = "<group>"; };
 		B52474601D7FF0CF0000B170 /* GGCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -78,11 +100,33 @@
 		B554E9321D87EA5600C97783 /* UIView+cloneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+cloneView.m"; sourceTree = "<group>"; };
 		B554E9341D87F7F800C97783 /* GGAnimationTransitionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGAnimationTransitionVC.h; sourceTree = "<group>"; };
 		B554E9351D87F7F800C97783 /* GGAnimationTransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGAnimationTransitionVC.m; sourceTree = "<group>"; };
+		B582269F1E13CCF6005DE054 /* GGPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPageVC.h; sourceTree = "<group>"; };
+		B58226A01E13CCF6005DE054 /* GGPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPageVC.m; sourceTree = "<group>"; };
+		B58226A21E13CE0C005DE054 /* GGPageViewParentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPageViewParentVC.h; sourceTree = "<group>"; };
+		B58226A31E13CE0C005DE054 /* GGPageViewParentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPageViewParentVC.m; sourceTree = "<group>"; };
 		B597BA1A1D86A876009F8717 /* GGCollectionViewNavDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCollectionViewNavDelegate.h; sourceTree = "<group>"; };
 		B597BA1B1D86A876009F8717 /* GGCollectionViewNavDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCollectionViewNavDelegate.m; sourceTree = "<group>"; };
 		B597BA1D1D86A939009F8717 /* GGPageViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGPageViewVC.h; sourceTree = "<group>"; };
 		B597BA1E1D86A939009F8717 /* GGPageViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGPageViewVC.m; sourceTree = "<group>"; };
 		B597BA1F1D86A939009F8717 /* GGPageViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGPageViewVC.xib; sourceTree = "<group>"; };
+		B59E22FC1DF17C1200A94100 /* GGFacebookReactionsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGFacebookReactionsVC.h; sourceTree = "<group>"; };
+		B59E22FD1DF17C1200A94100 /* GGFacebookReactionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGFacebookReactionsVC.m; sourceTree = "<group>"; };
+		B59E22FE1DF17C1200A94100 /* GGFacebookReactionsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGFacebookReactionsVC.xib; sourceTree = "<group>"; };
+		B5B134A61DD977FC002CD433 /* GGCollectionViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGCollectionViewAnimation.h; sourceTree = "<group>"; };
+		B5B134A71DD977FC002CD433 /* GGCollectionViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGCollectionViewAnimation.m; sourceTree = "<group>"; };
+		B5B134A81DD977FC002CD433 /* GGCollectionViewAnimation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGCollectionViewAnimation.xib; sourceTree = "<group>"; };
+		B5B134AB1DD978A6002CD433 /* GGListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGListCollectionViewCell.h; sourceTree = "<group>"; };
+		B5B134AC1DD978A6002CD433 /* GGListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGListCollectionViewCell.m; sourceTree = "<group>"; };
+		B5B134AD1DD978A6002CD433 /* GGListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGListCollectionViewCell.xib; sourceTree = "<group>"; };
+		B5B134B01DD978CF002CD433 /* GGGridCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGGridCollectionViewCell.h; sourceTree = "<group>"; };
+		B5B134B11DD978CF002CD433 /* GGGridCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGGridCollectionViewCell.m; sourceTree = "<group>"; };
+		B5B134B21DD978CF002CD433 /* GGGridCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGGridCollectionViewCell.xib; sourceTree = "<group>"; };
+		B5C6BA491E1227A800DA4397 /* GGSelectionMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGSelectionMenuViewController.h; sourceTree = "<group>"; };
+		B5C6BA4A1E1227A800DA4397 /* GGSelectionMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGSelectionMenuViewController.m; sourceTree = "<group>"; };
+		B5C6BA4B1E1227A800DA4397 /* GGSelectionMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGSelectionMenuViewController.xib; sourceTree = "<group>"; };
+		B5C6BA4E1E124B1000DA4397 /* GGSelectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGSelectionViewCell.h; sourceTree = "<group>"; };
+		B5C6BA4F1E124B1000DA4397 /* GGSelectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGSelectionViewCell.m; sourceTree = "<group>"; };
+		B5C6BA501E124B1000DA4397 /* GGSelectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGSelectionViewCell.xib; sourceTree = "<group>"; };
 		B5F8865C1D8BEC05009AEF1F /* GGDismissAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGDismissAnimationVC.h; sourceTree = "<group>"; };
 		B5F8865D1D8BEC05009AEF1F /* GGDismissAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGDismissAnimationVC.m; sourceTree = "<group>"; };
 		CFF69BBE20B9D3E45E4E2B8C /* Pods-GGSimpleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSimpleTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGSimpleTest/Pods-GGSimpleTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +198,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5086CC31E10EF6C00949858 /* GGPageView */ = {
+			isa = PBXGroup;
+			children = (
+				B5086CC41E10EFAD00949858 /* GGPageViewContainer.h */,
+				B5086CC51E10EFAD00949858 /* GGPageViewContainer.m */,
+				B5086CC61E10EFAD00949858 /* GGPageViewContainer.xib */,
+				B5C6BA491E1227A800DA4397 /* GGSelectionMenuViewController.h */,
+				B5C6BA4A1E1227A800DA4397 /* GGSelectionMenuViewController.m */,
+				B5C6BA4B1E1227A800DA4397 /* GGSelectionMenuViewController.xib */,
+				B5C6BA4E1E124B1000DA4397 /* GGSelectionViewCell.h */,
+				B5C6BA4F1E124B1000DA4397 /* GGSelectionViewCell.m */,
+				B5C6BA501E124B1000DA4397 /* GGSelectionViewCell.xib */,
+				B582269F1E13CCF6005DE054 /* GGPageVC.h */,
+				B58226A01E13CCF6005DE054 /* GGPageVC.m */,
+				B58226A21E13CE0C005DE054 /* GGPageViewParentVC.h */,
+				B58226A31E13CE0C005DE054 /* GGPageViewParentVC.m */,
+			);
+			path = GGPageView;
+			sourceTree = "<group>";
+		};
 		B53074F41D7ED453008583D2 /* GGCollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,8 +249,36 @@
 			children = (
 				B554E9311D87EA5600C97783 /* UIView+cloneView.h */,
 				B554E9321D87EA5600C97783 /* UIView+cloneView.m */,
+				B514F8291E725218008A302B /* UIViewController+MenuBar.h */,
+				B514F82A1E725218008A302B /* UIViewController+MenuBar.m */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		B59E22FB1DF17BFA00A94100 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				B59E22FC1DF17C1200A94100 /* GGFacebookReactionsVC.h */,
+				B59E22FD1DF17C1200A94100 /* GGFacebookReactionsVC.m */,
+				B59E22FE1DF17C1200A94100 /* GGFacebookReactionsVC.xib */,
+			);
+			path = Facebook;
+			sourceTree = "<group>";
+		};
+		B5B134A51DD9770F002CD433 /* CollectionViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B5B134A61DD977FC002CD433 /* GGCollectionViewAnimation.h */,
+				B5B134A71DD977FC002CD433 /* GGCollectionViewAnimation.m */,
+				B5B134A81DD977FC002CD433 /* GGCollectionViewAnimation.xib */,
+				B5B134AB1DD978A6002CD433 /* GGListCollectionViewCell.h */,
+				B5B134AC1DD978A6002CD433 /* GGListCollectionViewCell.m */,
+				B5B134AD1DD978A6002CD433 /* GGListCollectionViewCell.xib */,
+				B5B134B01DD978CF002CD433 /* GGGridCollectionViewCell.h */,
+				B5B134B11DD978CF002CD433 /* GGGridCollectionViewCell.m */,
+				B5B134B21DD978CF002CD433 /* GGGridCollectionViewCell.xib */,
+			);
+			path = CollectionViewAnimation;
 			sourceTree = "<group>";
 		};
 		DD202FF51B905E8B002DAABD = {
@@ -212,6 +304,9 @@
 		DD2030001B905E8B002DAABD /* GGSimpleTest */ = {
 			isa = PBXGroup;
 			children = (
+				B5086CC31E10EF6C00949858 /* GGPageView */,
+				B59E22FB1DF17BFA00A94100 /* Facebook */,
+				B5B134A51DD9770F002CD433 /* CollectionViewAnimation */,
 				B554E9301D87EA3A00C97783 /* Helper */,
 				B53074F41D7ED453008583D2 /* GGCollectionView */,
 				DDDF11821C2BCD1600F993D1 /* GGAutoLayout */,
@@ -422,9 +517,12 @@
 				TargetAttributes = {
 					DD202FFD1B905E8B002DAABD = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = H29WVAU34B;
+						ProvisioningStyle = Automatic;
 					};
 					DD2030161B905E8B002DAABD = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = H29WVAU34B;
 						TestTargetID = DD202FFD1B905E8B002DAABD;
 					};
 				};
@@ -453,12 +551,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B59E23001DF17C1200A94100 /* GGFacebookReactionsVC.xib in Resources */,
 				DD2030121B905E8B002DAABD /* LaunchScreen.xib in Resources */,
+				B5B134AA1DD977FC002CD433 /* GGCollectionViewAnimation.xib in Resources */,
+				B5086CC81E10EFAD00949858 /* GGPageViewContainer.xib in Resources */,
+				B5C6BA4D1E1227A800DA4397 /* GGSelectionMenuViewController.xib in Resources */,
 				DD6E04C91B9474B900DFADD7 /* GGAnimView.xib in Resources */,
 				B53074F91D7ED46C008583D2 /* GGCollectionView.xib in Resources */,
 				B52474621D7FF0CF0000B170 /* GGCollectionViewCell.xib in Resources */,
+				B5C6BA521E124B1000DA4397 /* GGSelectionViewCell.xib in Resources */,
 				DD20300F1B905E8B002DAABD /* Images.xcassets in Resources */,
+				B5B134AF1DD978A6002CD433 /* GGListCollectionViewCell.xib in Resources */,
 				DDDF11871C2BCD7000F993D1 /* GGAutoLayoutViewController.xib in Resources */,
+				B5B134B41DD978CF002CD433 /* GGGridCollectionViewCell.xib in Resources */,
 				DD62E4071B9D47BC00188C16 /* GGLeftMenu.xib in Resources */,
 				DD6E04CF1B9474C200DFADD7 /* GGMenuView.xib in Resources */,
 				B597BA211D86A939009F8717 /* GGPageViewVC.xib in Resources */,
@@ -578,25 +683,35 @@
 				B597BA201D86A939009F8717 /* GGPageViewVC.m in Sources */,
 				DD2030071B905E8B002DAABD /* AppDelegate.m in Sources */,
 				DD6E04D41B9474CE00DFADD7 /* GGDrawView.m in Sources */,
+				B514F82B1E725218008A302B /* UIViewController+MenuBar.m in Sources */,
+				B5086CC71E10EFAD00949858 /* GGPageViewContainer.m in Sources */,
 				B52474611D7FF0CF0000B170 /* GGCollectionViewCell.m in Sources */,
+				B58226A41E13CE0C005DE054 /* GGPageViewParentVC.m in Sources */,
 				B53074F81D7ED46C008583D2 /* GGCollectionView.m in Sources */,
 				DD8478321BBA38A300653B48 /* GGSpinerLayer.m in Sources */,
+				B5B134AE1DD978A6002CD433 /* GGListCollectionViewCell.m in Sources */,
 				DD6E04CE1B9474C200DFADD7 /* GGMenuView.m in Sources */,
+				B58226A11E13CCF6005DE054 /* GGPageVC.m in Sources */,
 				B52474651D7FFADB0000B170 /* GGCollectionViewFlowLayout.m in Sources */,
 				DD429A241C2A5BE700A9D867 /* GGHeaderViewController.m in Sources */,
 				DD6E04DA1B9474DA00DFADD7 /* GGLeftMenu.m in Sources */,
+				B5B134A91DD977FC002CD433 /* GGCollectionViewAnimation.m in Sources */,
 				DD6E04DF1B94754200DFADD7 /* GGParseLeftMenu.m in Sources */,
+				B5C6BA4C1E1227A800DA4397 /* GGSelectionMenuViewController.m in Sources */,
 				DD2030041B905E8B002DAABD /* main.m in Sources */,
+				B5C6BA511E124B1000DA4397 /* GGSelectionViewCell.m in Sources */,
 				B5F8865E1D8BEC05009AEF1F /* GGDismissAnimationVC.m in Sources */,
 				B554E92F1D87DC2600C97783 /* GGPresentAnimationManager.m in Sources */,
 				DD34C5371BA6C07B003C5EB8 /* GGCircleView.m in Sources */,
 				DD75F15E1C2A87A600ECFB84 /* UIScrollView+GGHeaderView.m in Sources */,
 				B554E9331D87EA5600C97783 /* UIView+cloneView.m in Sources */,
 				B597BA1C1D86A876009F8717 /* GGCollectionViewNavDelegate.m in Sources */,
+				B59E22FF1DF17C1200A94100 /* GGFacebookReactionsVC.m in Sources */,
 				DD6E04C81B9474B900DFADD7 /* GGAnimView.m in Sources */,
 				DDDF11861C2BCD7000F993D1 /* GGAutoLayoutViewController.m in Sources */,
 				DD8478351BBA472400653B48 /* GGBtnAnim.m in Sources */,
 				B554E9361D87F7F800C97783 /* GGAnimationTransitionVC.m in Sources */,
+				B5B134B31DD978CF002CD433 /* GGGridCollectionViewCell.m in Sources */,
 				DD1FDB421B984BBF00258F9D /* GGBasicAnimation.m in Sources */,
 				DD70B8781B95B09F000089FA /* GGAnimStransition.m in Sources */,
 			);
@@ -657,9 +772,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = H29WVAU34B;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -701,9 +818,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = H29WVAU34B;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -727,10 +846,13 @@
 			baseConfigurationReference = CFF69BBE20B9D3E45E4E2B8C /* Pods-GGSimpleTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: viethq6588@massgenie.com (BQWZYJ6M6U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H29WVAU34B;
 				INFOPLIST_FILE = GGSimpleTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -739,7 +861,9 @@
 			baseConfigurationReference = 52C0F9A745296793FF234B2D /* Pods-GGSimpleTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: viethq6588@massgenie.com (BQWZYJ6M6U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = H29WVAU34B;
 				INFOPLIST_FILE = GGSimpleTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -12,6 +12,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "GGPageViewVC.h"
 #import "GGAnimationTransitionVC.h"
+#import "UIViewController+MenuBar.h"
 
 static NSString *const kIdentifier = @"GGCollectionViewCell";
 static NSString *const kHeaderIdentifier = @"header";
@@ -47,6 +48,8 @@ static NSString *const kHeaderIdentifier = @"header";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self addHumbergerMenuLeftPosition];
     
     [self settingCollectionView];
 }

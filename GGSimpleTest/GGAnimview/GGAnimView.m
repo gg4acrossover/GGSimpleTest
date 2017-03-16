@@ -9,6 +9,7 @@
 #import "GGAnimView.h"
 #import "GGAnimStransition.h"
 #import "GGDrawView.h"
+#import "UIViewController+MenuBar.h"
 
 static NSInteger const LBL_CLICKME_TAG = 100;
 
@@ -23,6 +24,9 @@ static NSInteger const LBL_CLICKME_TAG = 100;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self addHumbergerMenuLeftPosition];
+    
     self.view.backgroundColor = [UIColor blackColor];
     CGRect s = [UIScreen mainScreen].bounds;
     self.view.frame = s;

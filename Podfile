@@ -5,6 +5,7 @@ target 'GGSimpleTest' do
 
 pod 'MFSideMenu'
 pod 'SDWebImage'
+pod 'SCPageViewController'
 
 end
 
